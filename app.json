@@ -164,7 +164,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default profile bio.",
-      "value": "[PM = Report Spam] I ❤ ️@oub-remix",
+      "value": "[PM = Report Spam] I ❤ ️@Wolf_User_Bot",
       "required": false
     },
     "ALIVE_NAME": {
