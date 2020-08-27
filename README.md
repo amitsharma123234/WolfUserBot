@@ -3,7 +3,7 @@
 
 ![logo](https://telegra.ph/file/277e2767055da1a50bea9.jpg)
 
-[![Build Status](https://travis-ci.com/WolfGangIndia/WolfUserBot.svg?branch=sql-extended)](https://travis-ci.com/WolfGangIndia/WolfUserBot) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/38fee611df7c4312be63a15cad64a50a)](https://www.codacy.com/manual/sahyam2019/oub-remix?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sahyam2019/oub-remix&amp;utm_campaign=Badge_Grade) ![Last Commit](https://img.shields.io/github/last-commit/sahyam2019/oub-remix) ![Contributers](https://img.shields.io/github/contributors/sahyam2019/oub-remix) ![Forks](https://img.shields.io/github/forks/WolfGangIndia/WolfUserBot)
+[![Build Status](https://travis-ci.com/WolfGangIndia/WolfUserBot.svg?branch=sql-extended)](https://travis-ci.com/WolfGangIndia/WolfUserBot) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/38fee611df7c4312be63a15cad64a50a)](https://www.codacy.com/manual/WolfGangIndia/WolfUserBot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=WolfGangIndia/WolfUserBot&amp;utm_campaign=Badge_Grade) ![Last Commit](https://img.shields.io/github/last-commit/WolfGangIndia/WolfUserBot) ![Contributers](https://img.shields.io/github/contributors/WolfGangIndia/WolfUserBot) ![Forks](https://img.shields.io/github/forks/WolfGangIndia/WolfUserBot)
 <a href="https://deepsource.io/gh/WolfGangIndia/WolfUserBot/?ref=repository-badge" target="_blank"><img alt="DeepSource" title="DeepSource" src="https://static.deepsource.io/deepsource-badge-light-mini.svg"></a>
 
 ## What is it?
