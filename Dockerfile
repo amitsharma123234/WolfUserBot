@@ -78,7 +78,7 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b sql-extended https://github.com/abhinav6497/wolfuserbot /root/wolfuserbot
+RUN git clone -b sql-extended https://github.com/WolfGangIndia/WolfUserBot /root/WolfUserBot
 RUN mkdir /root/wolfuserbot/.bin
 WORKDIR /root/wolfuserbot/
 ENV PATH="/root/wolfuserbot/.bin:$PATH"
