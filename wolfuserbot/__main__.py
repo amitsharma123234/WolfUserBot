@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" Userbot start point """
+""" WolfUserBot start point """
 
 from importlib import import_module
 from sys import argv
@@ -30,7 +30,7 @@ LOGS.info(f"You are running Wolf User Bot [{BOT_VER}]")
 
 LOGS.info(
     "Congratulations, Thanks to @Smart_S54 for your wolfuserbot is now running !! Test it by typing .start/.ping in any chat."
-    "\nIf you need assistance, head to https://t.me/PPE_Support")
+    "\nIf you need assistance, head to https://t.me/Wolf_User_Bot")
     
     
 
