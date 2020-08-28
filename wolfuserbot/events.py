@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 ##inline credit @keselekpermen69
 
-"""Userbot module for managing events. One of the main components of the wolfuserbot."""
+"""WolfUserBot module for managing events. One of the main components of the wolfuserbot."""
 
 import sys
 from asyncio import create_subprocess_shell as asyncsubshell
