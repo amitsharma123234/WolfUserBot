@@ -78,16 +78,16 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone -b sql-extended https://github.com/WolfGangIndia/WolfUserBot /root/userbot
-RUN mkdir /root/userbot/.bin
-WORKDIR /root/userbot/
-ENV PATH="/root/userbot/.bin:$PATH"
-WORKDIR /root/userbot/
+RUN git clone -b sql-extended https://github.com/WolfGangIndia/WolfUserBot /root/wolfuserbot
+RUN mkdir /root/wolfuserbot/.bin
+WORKDIR /root/wolfuserbot/
+ENV PATH="/root/wolfuserbot/.bin:$PATH"
+WORKDIR /root/wolfuserbot/
 
 #
 # Copies session and config (if it exists)
 #
-COPY ./sample_config.env ./userbot.session* ./config.env* /root/userbot/
+COPY ./sample_config.env ./wolfuserbot.session* ./config.env* /root/wolfuserbot/
 
 #
 # Install requirements
