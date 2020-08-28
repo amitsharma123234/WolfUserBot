@@ -52,7 +52,7 @@ botclone() {
         save_prog "bot_clone"
     fi
     echo "DONE!!"
-    cd Telegram-UserBot
+    cd Telegram-WolfUserBot
 }
 
 # Requirement install function
@@ -125,7 +125,7 @@ LOGGER=$LOGGER
 LOGGER_GROUP=$LOGGER_GROUP
 OPEN_WEATHER_MAP_APPID=$OPEN_WEATHER_MAP_APPID
 DATABASE_URL=$DB_URI" >> config.env
-    sudo mv config.env ~/Telegram-UserBot
+    sudo mv config.env ~/Telegram-WolfUserBot
     save_prog "gen_conf"
     fi
     echo "DONE!!"
@@ -149,7 +149,7 @@ dockerspin() {
     sudo systemctl start docker
     sudo systemctl enable docker
     sudo chmod 777 /var/run/docker.sock
-    cd ~/Telegram-UserBot
+    cd ~/Telegram-WolfUserBot
     docker build -t wolfuserbot .
     save_prog "dock"
     fi
