@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #inline credit @keselekpermen69
-""" Userbot initialization. """
+""" WolfUserBot initialization. """
 
 import os
 import re
@@ -362,7 +362,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [oub-remix](https://github.com/WolfGangIndia/WolfUserBot) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("I'm [Wolf User Bot](https://github.com/WolfGangIndia/WolfUserBot) modules helper...\nplease make your own bot, don't use mine 😋")
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
 
