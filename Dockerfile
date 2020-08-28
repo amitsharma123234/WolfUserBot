@@ -81,7 +81,7 @@ RUN python3 -m ensurepip \
 RUN git clone -b sql-extended https://github.com/WolfGangIndia/WolfUserBot /root/wolfuserbot
 RUN mkdir /root/wolfuserbot/.bin
 WORKDIR /root/wolfuserbot/
-ENV PATH="/root/wolfuserbot/.bin:$PATH"
+ENV PATH="/root/userbot/.bin:$PATH"
 WORKDIR /root/wolfuserbot/
 
 #
