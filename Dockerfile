@@ -78,11 +78,11 @@ RUN python3 -m ensurepip \
 #
 # Clone repo and prepare working directory
 #
-RUN git clone https://github.com/WolfGangIndia/WolfUserBot /root/wolfuserbot
+RUN git clone https://github.com/WolfGangIndia/WolfUserBot /root/WolfUserBot
 RUN mkdir /root/wolfuserbot/.bin
-WORKDIR /root/wolfuserbot/
+WORKDIR /root/WolfUserBot/
 ENV PATH="/root/userbot/.bin:$PATH"
-WORKDIR /root/wolfuserbot/
+WORKDIR /root/WolfUserBot/
 
 #
 # Copies session and config (if it exists)
