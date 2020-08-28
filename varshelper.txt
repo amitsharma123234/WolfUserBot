@@ -3,13 +3,13 @@ API_KEY =
 API_HASH = 
 
 
-# Userbot Session String this var is important
+# WolfUserBot Session String this var is important
 STRING_SESSION = 
 
 # Logging channel/group ID configuration. this var is important
 BOTLOG_CHATID = 
 
-# Userbot logging feature switch.
+# WolfUserBot logging feature switch.
 BOTLOG = True or False
 LOGSPAMMER = True or False
 
