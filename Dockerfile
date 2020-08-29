@@ -1,60 +1,97 @@
+# We're using Alpine Edge
+FROM alpine:edge
 
-FROM ubuntu:latest
-ENV TZ=Asia/Kolkata
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+#
+# We have to uncomment Community repo for some packages
+#
+RUN sed -e 's;^#http\(.*\)/edge/community;http\1/edge/community;g' -i /etc/apk/repositories
 
-RUN apt-get update && apt upgrade -y
-
-RUN apt-get install -y\
+#
+# Installing Packages
+#
+RUN apk add freetype-dev --no-cache=true --update \
     coreutils \
     bash \
-    nodejs \
-    bzip2 \
+    build-base \
+    bzip2-dev \
     curl \
     figlet \
     gcc \
     g++ \
     git \
+    sudo \
     aria2 \
     util-linux \
-    libevent-dev \
-    libjpeg-dev \
+    libevent \
+    jpeg-dev \
     libffi-dev \
-    libpq-dev \
+    libpq \
     libwebp-dev \
     libxml2 \
     libxml2-dev \
     libxslt-dev \
+    linux-headers \
     musl \
     neofetch \
-    libcurl4-openssl-dev \
+    openssl-dev \
     postgresql \
     postgresql-client \
-    postgresql-server-dev-all \
+    postgresql-dev \
     openssl \
     pv \
     jq \
     wget \
+    w3m \
+    #python \
+    #python-dev \
     python3 \
     python3-dev \
-    python3-pip \
-    libreadline-dev \
-    zipalign \
+    readline-dev \
     sqlite \
     ffmpeg \
-    libsqlite3-dev \
+    libjpeg-turbo-dev \
+    sqlite-dev \
+    libc-dev \
     sudo \
-    zlib1g-dev \
-    recoverjpeg \
-    zip \
-    megatools \
-    libfreetype6-dev \
-    procps \
-    policykit-1
+    chromium \
+    chromium-chromedriver \
+    zlib-dev \
+    jpeg 
+    
+     
+    #
+
+RUN curl https://cli-assets.heroku.com/install.sh
 
 
-RUN git clone https://github.com/WolfGangIndia/wolfUserbot /root/wolfuserbot
-RUN mkdir /root/wolfuserbot/bin/
-WORKDIR /root/wolfuserbot
+RUN python3 -m ensurepip \
+    && pip3 install --upgrade pip setuptools \
+    && pip3 install wheel \
+    && rm -r /usr/lib/python*/ensurepip && \
+    if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
+    if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
+    rm -r /root/.cache
+
+
+
+
+#
+# Clone repo and prepare working directory
+#
+RUN git clone -b sql-extended https://github.com/WolfGangIndia/WolfUserBot /root/wolfuserbot
+RUN mkdir /root/userbot/.bin
+WORKDIR /root/wolfuserbot/
+ENV PATH="/root/userbot/.bin:$PATH"
+WORKDIR /root/wolfuserbot/
+
+#
+# Copies session and config (if it exists)
+#
+COPY ./sample_config.env ./wolfuserbot.session* ./config.env* /root/wolfuserbot/
+
+#
+# Install requirements
+#
 RUN pip3 install -r requirements.txt
 CMD ["python3","-m","wolfuserbot"]
+
