@@ -34,9 +34,10 @@ For discussion, bug reporting, and help, you can join [WolfUserBot Support Group
 ## Credits
 
 Thanks for all : 
+* [heyworld](https://github.com/sahyam2019/oub-remix) - UserBot
 * [abhinav6497](https://github.com/abhinav6497/UserBot) - UserBot
-* [Baalaji maestro (RaphielGang)](https://github.com/RaphielGang) - Telegram-WolfUserBot
-* [AvinashReddy3108](https://github.com/AvinashReddy3108) - WolfUserBotExtended
+* [Baalaji maestro (RaphielGang)](https://github.com/RaphielGang) - Telegram-UserBot
+* [AvinashReddy3108](https://github.com/AvinashReddy3108) - UserBotExtended
 * [Mkaraniya](https://github.com/mkaraniya) - OpenUserBot
 * [DevPatel](https://github.com/Devp73) - OpenUserBot
 * [kandnub](https://github.com/kandnub) - TG-UserBot
