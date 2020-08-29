@@ -87,7 +87,7 @@ WORKDIR /root/wolfuserbot/
 #
 # Copies session and config (if it exists)
 #
-COPY ./sample_config.env ./wolfuserbot.session* ./config.env* /root/wolfuserbot/
+COPY ./sample_config.env ./WolfUserBot.session* ./config.env* /root/wolfuserbot/
 
 #
 # Install requirements
